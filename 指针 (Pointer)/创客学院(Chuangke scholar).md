@@ -39,7 +39,9 @@ Using b present the address of pointer( Where pointer point, give pointer the sa
 ```
 <br/>
 <br/>
-##2.指针与二维数组##   
+  
+ **2.指针和二维数组**  
+ 
 
 <br/>  
 
