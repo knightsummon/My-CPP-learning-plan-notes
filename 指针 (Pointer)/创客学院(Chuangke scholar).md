@@ -41,6 +41,7 @@ Using b present the address of pointer( Where pointer point, give pointer the sa
 <br/>
   
  **2.指针和二维数组**  
+ **2.Pointer and 2-D array**
  
 
 <br/>  
