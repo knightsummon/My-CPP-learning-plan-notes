@@ -50,10 +50,17 @@ Using b present the address of pointer( Where pointer point, give pointer the sa
   
  二维数组名代表数组的起始地址，数组名加1，是移动了一行元素，因此，二维数组名被称为行地址  
  2 2-Dimensional array's name present the beginning of the address.When the name of array plus one, the pointer jump through a whole rank and point to nextrank. So, the name of 2-D array alled address of rank.  
- a
+ 
  <br/>  
- a
- qw
-
-
-
+   
+ **3.字符指针和字符串**  
+ **3.Character Pointer and String**  
+ <br/>
+ <br/>
+ ![3.1](https://github.com/knightsummon/My-CPP-learning-plan-notes/blob/main/photoes/29306216951985340.jpg)  
+   
+ In C programming, when a character pointer point to a constant string, we can not use giving character pointer a new value to change the old character which pointed by character pointer.  
+ 
+ 
+ 
+ 
