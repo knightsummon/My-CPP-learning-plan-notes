@@ -37,6 +37,18 @@ Pointer also has ambiguity
 使用b表示指针的地址（指针指向哪里哪里就是它的地址),使用\*b来读取指针地址指向的值。
 Using b present the address of pointer( Where pointer point, give pointer the same address),Using \*b to present what the data value of Pointer b(addresss)  
 ```
+**1.2指针的使用**  
+
+**1.2 Practice of Pointer**  
+
+int \*p;  
+  
+|Pointer|描述 Describe| 
+|:-:|:-:|  
+|&p|取出指针自己在内存中的地址 output address of pointer itself in the memory |  
+|p|指针指向的地址 address of Pointer that pointed to|  
+|\*p|读取指针指向的地址所指向的数值 read the address of Pointer which pointed and give out the value through reading the address|  
+
 <br/>
 <br/>
   
