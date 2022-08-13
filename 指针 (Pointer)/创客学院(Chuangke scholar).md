@@ -14,7 +14,8 @@ pa[1]=a[1];  //Equalling pa[1]=&a[1][0];
 <br/>
 练习    
 practice   
-```
+  
+  
 int a=1;
 int *b=&a;
 
