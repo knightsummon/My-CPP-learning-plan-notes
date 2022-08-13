@@ -47,6 +47,13 @@ Using b present the address of pointer( Where pointer point, give pointer the sa
 <br/>  
 
 ![2.1](https://github.com/knightsummon/My-CPP-learning-plan-notes/blob/main/684255965171918649.jpg)  
+  
+ 二维数组名代表数组的起始地址，数组名加1，是移动了一行元素，因此，二维数组名被称为行地址  
+ 2 2-Dimensional array's name present the beginning of the address.When the name of array plus one, the pointer jump through a whole rank and point to nextrank. So, the name of 2-D array alled address of rank.  
+ 
+ <br/>  
+ 
+ qw
 
 
 
