@@ -46,3 +46,4 @@ Using b present the address of pointer( Where pointer point, give pointer the sa
 ![2.1](https://github.com/knightsummon/My-CPP-learning-plan-notes/blob/main/684255965171918649.jpg)  
 
 
+
