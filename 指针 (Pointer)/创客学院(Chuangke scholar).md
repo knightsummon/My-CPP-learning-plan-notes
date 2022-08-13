@@ -72,7 +72,20 @@ int \*p;
  ![3.1](https://github.com/knightsummon/My-CPP-learning-plan-notes/blob/main/photoes/29306216951985340.jpg)  
    
  In C programming, when a character pointer point to a constant string, we can not use giving character pointer a new value to change the old character which pointed by character pointer.  
- 
+<br/>  
+<br/>  
+  
+**4.二级指针**  
+**4.Secondary Pointer**  
+  
+![4.1](https://github.com/knightsummon/My-CPP-learning-plan-notes/blob/main/photoes/399069905579327721.jpg)  
+<br/>  
+前面红色部分代表指针q指向的单元的数据类型和结构  
+The red part which in front means the data type (int) and data structure (\*) which pointed by q  
+后面蓝色部分代表q的数据结构(\*)   
+The blue part which in near means the data structure of pointer q itself.  
+<br/>  
+
  
  
  
