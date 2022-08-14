@@ -85,6 +85,23 @@ The red part which in front means the data type (int) and data structure (\*) wh
 后面蓝色部分代表q的数据结构(\*)   
 The blue part which in near means the data structure of pointer q itself.  
 <br/>  
+<br/>  
+  
+**5.Void指针和Const修饰符**  
+**5.Void Pointer and Const Modifiers**  
+<br/>  
+Void指针是一种不确定数据类型的指针变量，它可以通过强制类型转换让该变量指向任何数据类型的变量  
+Void Pointer is a pointer variable which has no certified data type, it can be forced to become all data type which you want.  
+数据结构：Void \*<指针变量名称>  
+Data structure: Void \*<The name of Pointer>  
+<br/>  
+Const修饰符指针  
+Const Modifiers Pointer  
+const <数据类型> *<指针变量名>  
+const <data type> *<the name of Pointer Variable>  
+常量化指针的目标是限制通过指针改变其目标的值  
+The aim of const pointer is to limit a way which using change address of pointer to change value of object.   
+
 
  
  
