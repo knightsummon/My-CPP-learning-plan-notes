@@ -101,6 +101,20 @@ const <数据类型> *<指针变量名>
 const <data type> *<the name of Pointer Variable>  
 常量化指针的目标是限制通过指针改变其目标的值  
 The aim of const pointer is to limit a way which using change address of pointer to change value of object.   
+  
+  
+实践  
+Practice
+
+const int \*p;  
+int \* const p;  
+将const作为定冠词修饰后面的名词属性  
+Using const as definite article to define later noun   
+在int \*p前有一个const作为修饰的时候，作用于它整体，是的指针p只能指向一个地方。   
+When use a const as a definite article in front of int \*p, make pointer p can only point to a one place.  
+而在int \*const p 中，指针的地址被常量化无法改变，p因为前面有const修饰后面无法接受新的地址赋值。  
+
+
 
 
  
