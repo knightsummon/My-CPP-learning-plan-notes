@@ -117,6 +117,7 @@ When use a const as a definite article in front of int \*p, make pointer p can o
   
 **6.函数**  
 **6.Function**  
+_______________________________________________________________________________________________________________________________________________________________________
 <br/>  
 ![6.1](https://github.com/knightsummon/My-CPP-learning-plan-notes/blob/main/photoes/217551750491529628.jpg)  
 函数名称 (<实际参数>)  
