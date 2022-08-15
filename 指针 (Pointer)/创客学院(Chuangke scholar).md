@@ -124,7 +124,51 @@ ________________________________________________________________________________
 Function name (<argument>)  
 实参就是在使用函数时候，调用函数传递给被调用函数的数据。需要实际确切的数字。  
 Argument is when using function, outter function gives practicle data to this function.  
+<br/>    
+函数参数的传递 (实参和形参的使用）   
+The passing of function parameters  
+  
+![6.2](https://github.com/knightsummon/My-CPP-learning-plan-notes/blob/main/photoes/716102449211848029.jpg)  
+Using address to pass parameter  
+1.按照地址传递，实参为变量的地址，而形参为同类型的指针。  
+1.Using address to pass address, using address of Variable as arguments in function, meanwhile, Using Pointer as parameter in the same function.  
 <br/>  
+2.被调用函数中对形参的操作，将直接改变实参的值。  
+2.The operating on parameter in funcuion will directly change the value of argument which uses the function.  
+<br/>  
+实例  
+Practice
+交换数值  
+swap the values  
+```
+ #include <cstdio>
+#include <cstdlib>
+using namespace std;
+
+void swap(int* x,int* y);
+
+int main()
+{
+	int a = 10;
+	int b = 20;
+	swap(&a, &b);
+	printf("%d  %d\n", a, b);
+	return 0;
+}
+
+void swap(int* x, int* y)
+{
+	printf("%d  %d\n", x, y);
+	int t;
+	t = *x;
+	*x = *y;
+	*y = t;
+	printf("%d  %d\n", *x, *y);
+}
+```
+<br/>  
+
+
   
 
 
