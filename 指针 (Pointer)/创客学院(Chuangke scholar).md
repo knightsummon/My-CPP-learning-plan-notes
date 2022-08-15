@@ -114,7 +114,17 @@ Using const as definite article to define later noun
 When use a const as a definite article in front of int \*p, make pointer p can only point to a one place.  
 而在int \*const p 中，指针的地址被常量化无法改变，p因为前面有const修饰后面无法接受新的地址赋值。  
 
-
+  
+**6.函数**  
+**6.Function**  
+<br/>  
+![6.1](https://github.com/knightsummon/My-CPP-learning-plan-notes/blob/main/photoes/217551750491529628.jpg)  
+函数名称 (<实际参数>)  
+Function name (<argument>)  
+实参就是在使用函数时候，调用函数传递给被调用函数的数据。需要实际确切的数字。  
+Argument is when using function, outter function gives practicle data to this function.  
+<br/>  
+  
 
 
  
