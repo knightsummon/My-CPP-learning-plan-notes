@@ -188,6 +188,8 @@ The common struct of Pointer Function
 PS: If we use pointer function out of main, the return addresses of Pointer Functin must follow under rulers. Or CPU wil destory the return addresses of Pointer Function.  
 Rules:
 1.返回地址必须是全局变量的地址 2.返回地址必须是指针函数内局部static变量的地址 3.返回地址必须是字符串常量。
+1.return addresses must be the address of arguments. 2. return address must be the local static parameter inside the Pointer function 3. return addresses could be the string constant.  
+	
 
 
   
