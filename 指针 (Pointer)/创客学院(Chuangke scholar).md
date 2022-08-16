@@ -166,7 +166,24 @@ void swap(int* x, int* y)
 	printf("%d  %d\n", *x, *y);
 }
 ```
+<br/>      
+_______________________________________________________________________________________________________________________________________________________________________
+  
+**7.指针函数**  
+**7.Pointer Function**  
 <br/>  
+指针函数是指一个函数的返回值是地址量的函数  
+Pointer function which returns value is the address.  
+![7.1](https://github.com/knightsummon/My-CPP-learning-plan-notes/blob/main/photoes/348262166088450666.jpg)  
+指针函数的结构  
+The common struct of Pointer Function  
+``` 
+<data type> * <name of function>(<parameters>)
+	{
+	sentences;
+	return address;
+	}
+```
 
 
   
