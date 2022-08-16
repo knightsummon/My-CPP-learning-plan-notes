@@ -187,7 +187,7 @@ The common struct of Pointer Function
 注意：如在main函数外调用指针函数，指针函数的返回值必须按照以下规定返回，不然cpu会销毁掉指针函数的返回地址。  
 PS: If we use pointer function out of main, the return addresses of Pointer Functin must follow under rulers. Or CPU wil destory the return addresses of Pointer Function.  
 Rules:
-+
+1.返回地址必须是全局变量的地址 2.返回地址必须是指针函数内局部static变量的地址 3.返回地址必须是字符串常量。
 
 
   
