@@ -197,6 +197,7 @@ ________________________________________________________________________________
   
 ![8.1](https://github.com/knightsummon/My-CPP-learning-plan-notes/blob/main/photoes/86363077547690258.jpg)  
 递归函数的调用分为两个阶段： 
+  
 Recursive Function when it got used, it can divided into two parts belows:  
 1.递推阶段：从原问题出发，按照递归公式发展，最终达到递归终止条件。  
 1.Recurrence:starting from question and following the recursive formula, finally, entering the destination of terminative condition.  
