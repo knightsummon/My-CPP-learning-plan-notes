@@ -189,3 +189,17 @@ PS: If we use pointer function out of main, the return addresses of Pointer Func
 Rules:  
 1.返回地址必须是全局变量的地址 2.返回地址必须是指针函数内局部static变量的地址 3.返回地址必须是字符串常量。
 1.return addresses must be the address of arguments. 2. return address must be the local static parameter inside the Pointer function 3. return addresses could be the string constant.  
+
+_______________________________________________________________________________________________________________________________________________________________________
+  
+**8.递归函数**  
+**8.Recursive function**  
+  
+![8.1](https://github.com/knightsummon/My-CPP-learning-plan-notes/blob/main/photoes/86363077547690258.jpg)  
+递归函数的调用分为两个阶段： 
+Recursive Function when it got used, it can divided into two parts belows:  
+1.递推阶段：从原问题出发，按照递归公式发展，最终达到递归终止条件。  
+1.Recurrence:starting from question and following the recursive formula, finally, entering the destination of terminative condition.  
+2.回归阶段：按照递归终止条件求出结果，逆向代入递归公式，最后回到原问题求解。  
+2.Regression: Following the answer of destination, we put it to recursive formula that reversed, finally we wil track back to original question and get the final answer.  
+
