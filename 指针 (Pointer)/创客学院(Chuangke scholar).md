@@ -215,6 +215,6 @@ Function Pointer is used to store addresses of Functions, which is a Function's 
 The name of Function represents the Entrance addresses of Function.  
 函数的指针变量形式如下：  
 The formula of Function Pointer as following:  
-<数据结构>(*<函数指针名称>)(<参数说明列表>);  
-<Data type>(*<the name of Function Pointer>)(<Parameters>);   
+<数据结构> (*<函数指针名称>) (<参数说明列表>);  
+<Data type> (*<the name of Function Pointer>) (<Parameters>);   
 
