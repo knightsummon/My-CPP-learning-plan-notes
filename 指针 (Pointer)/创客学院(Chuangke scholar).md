@@ -204,3 +204,17 @@ Recursive Function when it got used, it can divided into two parts belows:
 2.回归阶段：按照递归终止条件求出结果，逆向代入递归公式，最后回到原问题求解。  
 2.Regression: Following the answer of destination, we put it to recursive formula that reversed, finally we wil track back to original question and get the final answer.  
 
+_______________________________________________________________________________________________________________________________________________________________________    
+**9.函数指针**  
+**9.Function Pointer**  
+<br/>  
+![9.1](https://github.com/knightsummon/My-CPP-learning-plan-notes/blob/main/photoes/110918105011885124.jpg)  
+函数指针是用来存放函数的地址，这个地址是一个函数的入口地址。  
+Function Pointer is used to store addresses of Functions, which is a Function's entrance.  
+函数的名代表了函数的入口地址。  
+The name of Function represents the Entrance addresses of Function.  
+函数的指针变量形式如下：  
+The formula of Function Pointer as following:  
+<数据结构>(*<函数指针名称>)(<参数说明列表>);  
+<Data type>(*<the name of Function Pointer>)(<Parameters>);   
+
