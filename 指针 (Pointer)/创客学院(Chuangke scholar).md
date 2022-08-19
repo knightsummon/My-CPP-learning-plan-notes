@@ -223,4 +223,133 @@ The formula of Function Pointer as following:
 一、场景描述  
 用函数指针数组存放各种排序算法，通过指针去调用算法进行排序。  
 在本程序中，一共定义了4种排序算法——选择排序、插入排序、希尔排序、归并排序（当然后期还能加入更多的排序算法，比如冒泡排序） 。定义了一个通用排序接口void sort(void (sortAlgorithm)(int,int),int *array, int n) ，在主程序中由用户选择使用何种排序算法，调用sort方法，传入函数指针数组中对应的项，进行排序并且输出排序后的结果。  
+二、代码  
+```  
+/*
+ * 函数指针数组的应用————多种排序算法
+ * 用函数指针数组存放各种排序算法，通过指针去调用算法进行排序
+ */
+#include <stdio.h>
 
+//比较大小
+int less(int v, int w) {
+    if (v < w) {
+        return 1;
+    }
+    else return 0;
+}
+
+//交换位置
+void exch(int *array,int v, int w) {
+    int tmp = array[v];
+    array[v] = array[w];
+    array[w] = tmp;
+}
+
+//打印数组
+void show(int *array, int n) {
+    for (int i = 0; i < n; ++i) {
+        printf("%d ", array[i]);
+    }
+    printf("\n");
+}
+
+//选择排序
+void selectSort(int *array, int n) {
+    for (int i = 0; i < n; ++i) {
+        int min = i;
+        for (int j = i+1; j < n; ++j) {
+            if (less(array[j], array[min])) {
+                min = j;
+            }
+        }
+        exch(array, min, i);
+    }
+}
+
+//插入排序
+void insertSort(int *array, int n) {
+    for (int i = 0; i < n; ++i) {
+        for (int j = i; j > 0 && less(array[j], array[j - 1]); --j) {
+            exch(array, j, j - 1);
+        }
+    }
+}
+
+//希尔排序
+void shellSort(int *array, int n) {
+    int h = 1;
+    while (h < n / 3) {
+        h = 3 * h + 1;
+    }
+    while (h >= 1) {
+        for (int i = h; i < n; ++i) {
+            for (int j = i; j >= h && less(array[j], array[j - h]); j -= h) {
+                exch(array, j, j - h);
+            }
+        }
+        h = h/3;
+    }
+}
+
+//归并排序
+void merge(int *array,int lo,int mid,int hi, int *aux) {
+    int i = lo, j = mid + 1;
+    for (int k = lo; k <= hi; ++k) {
+        aux[k] = array[k];
+    }
+    for (int l = lo; l <= hi; ++l) {
+        if (i > mid) array[l] = aux[j++];
+        else if (j > hi) array[l] = aux[i++];
+        else if (less(aux[i],aux[j])) array[l] = aux[i++];
+        else array[l] = aux[j++];
+    }
+}
+
+void mergeSortRecursive(int *array,int lo,int hi, int *aux) {
+    if (hi <= lo) return;
+    int mid = lo + (hi - lo) / 2;
+    mergeSortRecursive(array, lo, mid, aux);
+    mergeSortRecursive(array, mid + 1, hi, aux);
+    merge(array, lo, mid, hi, aux);
+}
+
+void mergeSort(int *array, int n) {
+    int aux[n];
+    mergeSortRecursive(array, 0, n - 1, aux);
+}
+
+//通用排序接口，传入的是函数指针，具体视传入的是哪个排序算法而定
+void sort(void (*sortAlgorithm)(int*,int),int *array, int n) {
+    sortAlgorithm(array, n);
+    show(array,n);
+}
+
+
+
+int main(int argc, char *args[]) {
+    int count = 0;
+    //函数指针数组，存放各种排序算法
+    void (*sortAlgorithm[])(int*,int) = {selectSort,insertSort,shellSort,mergeSort};
+
+    printf("这是一个简单的应用函数指针数组的例子————多种排序算法\n");
+    printf("请输入整数的个数：");
+    scanf("%d", &count);
+    int array[count];
+    printf("请输入你想排序的整数列：");
+    for (int i = 0; i < count; ++i) {
+        scanf("%d", array + i);
+    }
+    printf("请选择排序方式：\n");
+    printf("1----选择排序\n");
+    printf("2----插入排序\n");
+    printf("3----希尔排序\n");
+    printf("4----归并排序\n");
+    int choice;
+    scanf("%d", &choice);
+    printf("排序后的结果如下：");
+    sort(sortAlgorithm[choice-1], array, count);
+
+    return 0;
+}  
+```
