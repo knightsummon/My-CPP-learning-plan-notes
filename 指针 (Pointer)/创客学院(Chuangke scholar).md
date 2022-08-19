@@ -220,6 +220,7 @@ The formula of Function Pointer as following:
 <Data type> (\*<the name of Function Pointer>) (<Parameters>);   
 ```
 **实验  函数指针**  
+
 一、场景描述  
 用函数指针数组存放各种排序算法，通过指针去调用算法进行排序。  
 在本程序中，一共定义了4种排序算法——选择排序、插入排序、希尔排序、归并排序（当然后期还能加入更多的排序算法，比如冒泡排序） 。定义了一个通用排序接口void sort(void (sortAlgorithm)(int,int),int *array, int n) ，在主程序中由用户选择使用何种排序算法，调用sort方法，传入函数指针数组中对应的项，进行排序并且输出排序后的结果。  
@@ -353,3 +354,6 @@ int main(int argc, char *args[]) {
     return 0;
 }  
 ```
+<br/>  
+三、程序优势  
+在主程序中只要调用sort方法，就可以不需要编写switch语句就能实现调用不同排序算法的功能。通过将函数名赋值给函数指针，也就是使函数指针指向该入口地址。  
