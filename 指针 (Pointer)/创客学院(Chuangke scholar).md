@@ -348,14 +348,18 @@ int main(int argc, char *args[]) {
     void (*sortAlgorithm[])(int*,int) = {selectSort,insertSort,shellSort,mergeSort};
 
     printf("这是一个简单的应用函数指针数组的例子————多种排序算法\n");
+    printf("Choosing multiple Sort Algorithms\n");
     printf("请输入整数的个数：");
+    printf("Please input the numbers of integers\n");
     scanf("%d", &count);
     int array[count];
     printf("请输入你想排序的整数列：");
+    printf("Please input the original array：");
     for (int i = 0; i < count; ++i) {
         scanf("%d", array + i);
     }
     printf("请选择排序方式：\n");
+    printf("Choosing the Sort Algorithm：\n");
     printf("1----选择排序\n");
     printf("2----插入排序\n");
     printf("3----希尔排序\n");
