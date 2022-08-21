@@ -231,6 +231,7 @@ In this practice programmer, I define four sort algorithms---Select sort,insert 
 I define a interface which can be used in programmer commenly, which names void sort(void (sortAlgorithm)(int,int),int \*array, int n), where in main function administer can use sort function to choose which algorithms to use. Give actual paramters to Function Pointer Array, and return back the results to main function.  
 <br/>  
 二、代码  
+No.2 Code
 ```  
 /*
  * 函数指针数组的应用————多种排序算法
@@ -238,7 +239,8 @@ I define a interface which can be used in programmer commenly, which names void 
  */
 #include <stdio.h>
 
-//比较大小
+//比较大小  
+//Comparission  
 int less(int v, int w) {
     if (v < w) {
         return 1;
@@ -246,14 +248,16 @@ int less(int v, int w) {
     else return 0;
 }
 
-//交换位置
+//交换位置  
+//Exchange  
 void exch(int *array,int v, int w) {
     int tmp = array[v];
     array[v] = array[w];
     array[w] = tmp;
 }
 
-//打印数组
+//打印数组  
+//Traversal  
 void show(int *array, int n) {
     for (int i = 0; i < n; ++i) {
         printf("%d ", array[i]);
@@ -261,7 +265,8 @@ void show(int *array, int n) {
     printf("\n");
 }
 
-//选择排序
+//选择排序  
+SelectSort  
 void selectSort(int *array, int n) {
     for (int i = 0; i < n; ++i) {
         int min = i;
@@ -274,7 +279,8 @@ void selectSort(int *array, int n) {
     }
 }
 
-//插入排序
+//插入排序  
+//InsertSort  
 void insertSort(int *array, int n) {
     for (int i = 0; i < n; ++i) {
         for (int j = i; j > 0 && less(array[j], array[j - 1]); --j) {
@@ -284,6 +290,7 @@ void insertSort(int *array, int n) {
 }
 
 //希尔排序
+//Shell sort
 void shellSort(int *array, int n) {
     int h = 1;
     while (h < n / 3) {
@@ -299,7 +306,8 @@ void shellSort(int *array, int n) {
     }
 }
 
-//归并排序
+//归并排序  
+//Merge_Sort  
 void merge(int *array,int lo,int mid,int hi, int *aux) {
     int i = lo, j = mid + 1;
     for (int k = lo; k <= hi; ++k) {
