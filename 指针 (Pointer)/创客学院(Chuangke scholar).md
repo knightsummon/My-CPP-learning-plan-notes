@@ -220,10 +220,16 @@ The formula of Function Pointer as following:
 <Data type> (\*<the name of Function Pointer>) (<Parameters>);   
 ```
 **实验  函数指针**  
-
+Practice  
 一、场景描述  
+No1.Scenario  
 用函数指针数组存放各种排序算法，通过指针去调用算法进行排序。  
-在本程序中，一共定义了4种排序算法——选择排序、插入排序、希尔排序、归并排序（当然后期还能加入更多的排序算法，比如冒泡排序） 。定义了一个通用排序接口void sort(void (sortAlgorithm)(int,int),int *array, int n) ，在主程序中由用户选择使用何种排序算法，调用sort方法，传入函数指针数组中对应的项，进行排序并且输出排序后的结果。  
+We can use pointer to call algorithms, which are stored by Function Pointer array.  
+在本程序中，一共定义了4种排序算法——选择排序、插入排序、希尔排序、归并排序。  
+In this practice programmer, I define four sort algorithms---Select sort,insert sort, Shell sort, Merge_sort.  
+定义了一个通用排序接口void sort(void (sortAlgorithm)(int,int),int \*array, int n) ，在主程序中由用户选择使用何种排序算法，调用sort方法，传入函数指针数组中对应的项，进行排序并且输出排序后的结果。  
+I define a interface which can be used in programmer commenly, which names void sort(void (sortAlgorithm)(int,int),int \*array, int n), where in main function administer can use sort function to choose which algorithms to use. Give actual paramters to Function Pointer Array, and return back the results to main function.  
+<br/>  
 二、代码  
 ```  
 /*
