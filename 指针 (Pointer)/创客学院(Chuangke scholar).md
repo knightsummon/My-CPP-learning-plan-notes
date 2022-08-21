@@ -374,8 +374,11 @@ int main(int argc, char *args[]) {
 ```
 <br/>  
 三、程序优势  
+No.3 The advantages of programmer  
 
-在主程序中只要调用sort方法，就可以不需要编写switch语句就能实现调用不同排序算法的功能。通过将函数名赋值给函数指针，也就是使函数指针指向该入口地址。  
+在主程序中只要调用sort方法，就可以不需要编写switch语句就能实现调用不同排序算法的功能。  
+通过将函数名赋值给函数指针，也就是使函数指针指向该入口地址。  
+Give algorithm's name to Function Pointer, Making function poiner point at the address of chosed Algorithm Function.  
 
 四、理解与收获  
 函数指针有两个用途：调用函数和做函数的参数。本程序主要是使用了它做函数参数的功能。通过传入不同的函数，就可以调用不同的排序算法。提供了调用的灵活性，简化结构，某种程序上也是实现了面向对象编程的多态性。  
