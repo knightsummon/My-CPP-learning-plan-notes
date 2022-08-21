@@ -383,5 +383,5 @@ Give algorithm's name to Function Pointer, Making function poiner point at the a
 四、理解与收获   
 No.4 Comprehend  
 函数指针有两个用途：调用函数和做函数的参数。本程序主要是使用了它做函数参数的功能。通过传入不同的函数，就可以调用不同的排序算法。提供了调用的灵活性，简化结构，某种程序上也是实现了面向对象编程的多态性。   
-Function Pointer has two use: call function and be the parameter of function. This programmer use Function Pointer as global parameter, giving it variable functions to call numerous Sort Algorithms, reflecting the flexible of programming. And somehow it also reflects the polymorphism of object oriented programming.
+Function Pointer has two use: call function and be the parameter of function. This programmer use Function Pointer as global parameter, giving it variable functions to call numerous Sort Algorithms, reflecting the flexible of programming. And somehow it also reflects the polymorphism of object oriented programming.  
 而函数指针数组，就是一个包含多个函数指针的数组，这样可以将多个函数进行统一标识。这体现在菜单驱动系统中。例如本程序就是提示用户输入一个整数值来选择排序算法菜单中的一个选项。用户的选择可以做函数指针数组的下标，而数组中的指针可以用来调用函数。  
