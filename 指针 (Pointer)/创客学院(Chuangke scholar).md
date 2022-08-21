@@ -386,3 +386,5 @@ No.4 Comprehend
 Function Pointer has two use: call function and be the parameter of function. This programmer use Function Pointer as global parameter, giving it variable functions to call numerous Sort Algorithms, reflecting the flexible of programming. And somehow it also reflects the polymorphism of object oriented programming.  
 而函数指针数组，就是一个包含多个函数指针的数组，这样可以将多个函数进行统一标识。这体现在菜单驱动系统中。例如本程序就是提示用户输入一个整数值来选择排序算法菜单中的一个选项。用户的选择可以做函数指针数组的下标，而数组中的指针可以用来调用函数。  
 In my programmer, Function Pointer is an array which includes various Fuction Poiner, putting all functions's addresses in it. In my view, I see it as a menu, user can choose the subscript to select one of these Function Pointers to call needed Sort Algorithm.  
+__________________________________________________________________________________________________________________________________
+<br/>  
