@@ -9,8 +9,8 @@ A function after compile, will take a part of memory where function's name is th
 这就解释了为什么将函数的参数设置为标准为指针的形参，函数就能直接调用实参来改变数值。因为函数的名字本身就是一个指针，指向的是一个地址。  
 It explained why we can set the parameters of function as pointer, then function can directly change the Arguments. Because the name of Function is a pointer  which points to a address where the function hold place in memory.  
   
-格式：函数的返回类型 （\*指针变量名）（函数参数列表)  
-Format: return type of function （\*The variable name of Pointer）（Fuction Parameter list)  
+<font color=red> 格式：函数的返回类型 （\*指针变量名）（函数参数列表) </font>  
+<font color=red> Format: return type of function （\*The variable name of Pointer）（Fuction Parameter list)   </font>
 
 ````
 #include <stdio.h>
