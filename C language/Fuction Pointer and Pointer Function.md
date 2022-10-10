@@ -31,9 +31,10 @@ int main()
 }
 ````  
 <br/>  
-### 2.指针函数      
-### 2.Pointer Function  
   
+### 2.指针函数   
+### 2.Pointer Function  
+
 函数类型是函数的返回值是一个指针类型，故称为指针函数。  
 The function after compile will return a value which is the type of Pointer, so we call it as Pointer Function  
   
@@ -44,4 +45,17 @@ eg: Int\* MAX(int x, int y);
 eg: char* strcat (char \*dest, const char\* src);  
 
 That's enough, look out the difference between these two types I have mentioned.  
-
+````
+char *my_strcat(char *dest, const char *src)
+{
+	assert(dest != NULL);
+	assert(src != NULL);
+	char *ret = dest;
+	while (*dest!='\0')                 //寻找到目标字符串的'\0'位置
+	{
+		dest++;
+	}
+	while (*dest++ = *src++);       //拷贝过程与strcpy相同
+	return ret;
+}  
+````  
