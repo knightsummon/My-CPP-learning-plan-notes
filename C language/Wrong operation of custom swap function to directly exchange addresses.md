@@ -14,8 +14,9 @@ void swapaddress(int *a, int *b) {
 ***ERROR***
 ````
 <br/>  
-但是如下就可以将数值正常交换    
-If we write as follow, the values can exchange each other.    
+但是如下就可以将数值正常交换      
+If we write as follow, the values can exchange each other.   
+  
 ````
 void swapvalue(int *a,int *b){
 	int temp;
@@ -24,7 +25,6 @@ void swapvalue(int *a,int *b){
 	*b=temp;
 }
 ````
-  
     
  <br/> 
 同时值得注意的一点是，如下使用二级指针传递参数也可以交换函数的实参数值。  
@@ -44,4 +44,6 @@ void swapSpoint(int **pa, int **pb) {
 So it is conclusion:  
 Swap函数中传递进去的地址任然是一个形参，它只是原有的实际地址的备份，以同样的名字地址存放在Swap函数占据的内存中。  
 The address what we can see in the parameteres of Swap function is also a parameter, it is just a coppy from actual addresses(Argument), Using the same name in the memory which occupied by the Swap Function.  
+这就是为什么Swap函数的实体里面任然要用\*的原因了。  
+This is why we should use \* in Swap Function body to help ue complete the exchange of values.  
 
