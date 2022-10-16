@@ -28,7 +28,8 @@ void swapvalue(int *a,int *b){
     
  <br/> 
 同时值得注意的一点是，如下使用二级指针传递参数也可以交换函数的实参数值。  
-But what also need we pay attention is that If we use secondary pointer to exchange Arguments in Function, the values can be changed.  
+But what also need we pay attention is that If we use secondary pointer to exchange Arguments in Function, the values can be changed.    
+  
 ````
 void swapSpoint(int **pa, int **pb) {
     int *temp;
